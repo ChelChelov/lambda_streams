@@ -6,14 +6,14 @@ import java.util.Comparator;
 
 public class StudentInfo {
 
-    void testStudents(ArrayList<Student> al, StudentChecks sc) {
-        for (Student s :
-                al) {
-            if (sc.check(s)) {
-                System.out.println(s);
-            }
-        }
-    }
+//    void testStudents(ArrayList<Student> al, StudentChecks sc) {
+//        for (Student s :
+//                al) {
+//            if (sc.check(s)) {
+//                System.out.println(s);
+//            }
+//        }
+//    }
 
 //    void printStudentOverGrade(ArrayList<Student> al, double grade) {
 //        for (Student s :
@@ -43,22 +43,22 @@ public class StudentInfo {
 //    }
 }
 
-class Test {
-    public static void main(String[] args) {
-        Student st1 = new Student("Ivan", 'm', 22, 3, 8.3);
-        Student st2 = new Student("Vasia", 'm', 21, 2, 8.6);
-        Student st3 = new Student("Kolia", 'm', 23, 4, 7.5);
-        Student st4 = new Student("Ira", 'f', 20, 1, 6.9);
-        Student st5 = new Student("Vlad", 'm', 22, 3, 9);
-
-        ArrayList<Student> students = new ArrayList<>();
-        students.add(st1);
-        students.add(st2);
-        students.add(st3);
-        students.add(st4);
-        students.add(st5);
-
-        StudentInfo studentInfo = new StudentInfo();
+//class Test {
+//    public static void main(String[] args) {
+//        Student st1 = new Student("Ivan", 'm', 22, 3, 8.3);
+//        Student st2 = new Student("Vasia", 'm', 21, 2, 8.6);
+//        Student st3 = new Student("Kolia", 'm', 23, 4, 7.5);
+//        Student st4 = new Student("Ira", 'f', 20, 1, 6.9);
+//        Student st5 = new Student("Vlad", 'm', 22, 3, 9);
+//
+//        ArrayList<Student> students = new ArrayList<>();
+//        students.add(st1);
+//        students.add(st2);
+//        students.add(st3);
+//        students.add(st4);
+//        students.add(st5);
+//
+//        StudentInfo studentInfo = new StudentInfo();
 
 //        Collections.sort(students, new Comparator<Student>() {
 //            @Override
@@ -68,18 +68,18 @@ class Test {
 //        });
 //        System.out.println(students);
 
-        Collections.sort(students, (s1,s2) -> s1.getAge() - s2.getAge());
-        System.out.println(students);
-
-
-
+//        Collections.sort(students, (s1,s2) -> s1.getAge() - s2.getAge());
+//        System.out.println(students);
+//
+//
+//
 //        studentInfo.testStudents(students, new StudentChecks() { //this code equals to
 //            @Override
 //            public boolean check(Student s) {
 //                return s.getAge() < 22;
 //            }
 //        });
-
+//
 //        studentInfo.testStudents(students, (Student s) -> {return s.getAge() < 22;});
 //        System.out.println();
 //
@@ -102,12 +102,12 @@ class Test {
 //        studentInfo.printStudentUnderAge(students, 21);
 //        System.out.println();
 //        studentInfo.printStudentMixConditions(students, 20, 9, 'm');
-    }
-}
-
-interface StudentChecks {
-    boolean check(Student s);
-}
+//    }
+//}
+//
+//interface StudentChecks {
+//    boolean check(Student s);
+//}
 
 //class CheckOverGrade implements StudentChecks{
 //
